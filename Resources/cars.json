@@ -1,0 +1,7 @@
+[
+    { "id": "02AED271-753D-4218-8F5A-DA0570B8A6EC", "brand": "Audi", "name": "A5", "price": 334990.0, "gas_type": 2 },
+    { "id": "F5FAB5FB-D711-4A12-B6F9-25A4B7AE0946", "brand": "Nissan", "name": "Duster", "price": 27000.0, "gas_type": 0 },
+    { "id": "3D9A3898-89B9-4CAC-9972-642108FA3CF7", "brand": "Volkswagen", "name": "Fusca", "price": 20000.0, "gas_type": 1 },
+    { "id": "DD4B3F96-A7F9-4399-B414-2EA9C2122D2E", "brand": "BMW", "name": "X6", "price": 400000.0, "gas_type": 2 }
+]
+

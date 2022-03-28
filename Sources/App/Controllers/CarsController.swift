@@ -9,6 +9,7 @@ struct CarsController: RouteCollection {
         routes.get("cars", use: allCars)
         routes.get("cars", ":id", use: carById)
         routes.post("cars", use: createCar)
+        routes.delete("cars", ":id", use: removeCar)
     }
 
     private func allCars(req: Request) throws -> [Car] {
@@ -34,6 +35,15 @@ struct CarsController: RouteCollection {
 
         let newCar = carsManager.addNewCar(car)
         return newCar
+    }
+
+    private func removeCar(req: Request) throws -> Response {
+        guard let carId = req.parameters.get("id"),
+              carsManager.removeCar(by: carId) != nil else {
+            throw Abort(.notFound)
+        }
+
+        return Response(status: .noContent, version: .http1_1, headers: HTTPHeaders(), body: .empty)
     }
 
 }

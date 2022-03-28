@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "5716cf2e-3431-4a06-9c17-7b871a16d663",
+		"name": "Cars Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brands - List All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_address}}/brands",
+					"host": [
+						"{{host_address}}"
+					],
+					"path": [
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brands - By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_address}}/brands/1",
+					"host": [
+						"{{host_address}}"
+					],
+					"path": [
+						"brands",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cars - List All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_address}}/cars",
+					"host": [
+						"{{host_address}}"
+					],
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cars - By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_address}}/cars/02AED271-753D-4218-8F5A-DA0570B8A6EC",
+					"host": [
+						"{{host_address}}"
+					],
+					"path": [
+						"cars",
+						"02AED271-753D-4218-8F5A-DA0570B8A6EC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cars - Create a new Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"brand\": \"Volkswagen\",\n    \"name\": \"Brasilia\",\n    \"price\": 15000.0,\n    \"gas_type\": 1,\n}"
+				},
+				"url": {
+					"raw": "{{host_address}}/cars",
+					"host": [
+						"{{host_address}}"
+					],
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cars - Remove a Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host_address}}/cars/3D9A3898-89B9-4CAC-9972-642108FA3CF7",
+					"host": [
+						"{{host_address}}"
+					],
+					"path": [
+						"cars",
+						"3D9A3898-89B9-4CAC-9972-642108FA3CF7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
